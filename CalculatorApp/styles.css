@@ -1,0 +1,89 @@
+
+body {
+    background-color: rgb(229, 159, 92, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(148, 205, 205, 1);
+    box-shadow: 0px 4px 50px rgba(35, 35, 35, 0.25);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 30px 30px;
+    margin: 100px;
+}
+
+.result {
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: right;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 4px rgba(35, 35, 35, 0.25);
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    width: 300px;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: 2.14fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.fourth-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.fifth-row {
+    display: grid;
+    grid-template-columns: 0.98fr 0.30fr;
+    column-gap: 10px;
+}
+
+.buttons-container button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 10px;
+    box-shadow: 0px 0px 4px rgba(35, 35, 35, 0.25);
+    width: 10;
+    font-size: 16px;
+}
+
+#button-operator {
+    background-color: rgb(229, 159, 92);
+    color: white;
+    font-weight: 700;
+}
+
+.buttons-container button:hover, 
+.buttons-container #button-operator:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+    cursor: pointer;
+}
